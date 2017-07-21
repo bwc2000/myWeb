@@ -1,0 +1,6 @@
+{% extends 'polls/base.html' %}
+{% load staticfiles %}
+{% block main_content %}
+    <h2 align="center">THANK YOU FOR VOTING</h2>
+    <h5 align="center"><a href="{% url 'polls:index' %}">Back to Homepage</a></h5>
+{% endblock %}
