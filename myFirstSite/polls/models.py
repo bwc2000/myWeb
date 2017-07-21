@@ -7,6 +7,7 @@ class Candidate(models.Model):
     last_name = models.CharField(max_length=100)
     vote_count = models.IntegerField(default=0)
     candidate_image = models.ImageField(upload_to='static/polls/images/')
+    hit_count = models.IntegerField(default=0)
     def __str__(self):
         return self.first_name + " " + self.last_name
 
